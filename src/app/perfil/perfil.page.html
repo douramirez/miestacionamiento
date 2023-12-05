@@ -1,0 +1,119 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-avatar class="user-logo">
+    <img src="/assets/icon/logo.png">
+  </ion-avatar>
+
+  <ion-list class="user-form">
+    <ion-list-header>
+      <ion-label>Nombre</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-input type="text" placeholder="Ingrese su nombre"></ion-input>
+    </ion-item>
+
+    <ion-list-header>
+      <ion-label>Información Personal</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-icon name="id-card-outline"></ion-icon>
+      <ion-input type="text" placeholder="Ingrese su RUT"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-input type="email" placeholder="Ingrese su correo"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-input type="tel" placeholder="Ingrese su teléfono"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Género</ion-label>
+      <ion-select placeholder="Seleccione su género">
+        <ion-select-option value="masculino">Masculino</ion-select-option>
+        <ion-select-option value="femenino">Femenino</ion-select-option>
+        <!-- Agrega más opciones aquí si es necesario -->
+      </ion-select>
+    </ion-item>
+
+    <ion-list-header>
+      <ion-label>Direccion</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-input type="text" placeholder="Ingrese su direccion"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="text" placeholder="Ubicacion del estacionamiento (opcional)"></ion-input>
+    </ion-item>
+
+    <!-- Agrega más campos aquí -->
+
+    <ion-list-header>
+      <ion-label>Datos Bancarios</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Banco</ion-label>
+      <ion-select placeholder="Seleccione su banco">
+        <ion-select-option value="banco1">Banco Falabella</ion-select-option>
+        <ion-select-option value="banco2">Banco Estado</ion-select-option>
+        <ion-select-option value="banco1">Banco Ripley</ion-select-option>
+        <ion-select-option value="banco1">Banco Edwards</ion-select-option>
+        <ion-select-option value="banco1">Banco Santander</ion-select-option>
+        <!-- Agrega más opciones aquí -->
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Tipo de cuenta</ion-label>
+      <ion-select placeholder="Seleccione el tipo de cuenta">
+        <ion-select-option value="tipo1">Credito</ion-select-option>
+        
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="number" placeholder="Ingrese su  nro de cuenta"></ion-input>
+    </ion-item>
+
+    <ion-list-header>
+      <ion-label>Cambiar contraseña</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-input type="password" placeholder="Ingrese nueva contraseña"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="Repita nueva contraseña"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Acerca</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Ayuda</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Privacidad</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Terminos y condiciones</ion-label>
+    </ion-item>
+
+    <ion-row class="logout-button-row">
+      <ion-col>
+        <ion-button expand="full" class="logout-button">Cerrar sesion</ion-button>
+      </ion-col>
+    </ion-row>
+
+
+  </ion-list>
+</ion-content>

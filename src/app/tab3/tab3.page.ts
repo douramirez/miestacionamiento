@@ -9,4 +9,10 @@ export class Tab3Page {
 
   constructor() {}
 
+  historial = [
+    { nombre: 'Juanito Lopez',direccion: 'Maipu', precio: 3700, estado: 'Realizado' },
+    { nombre: 'Constanza Perez',direccion: 'Cerrilos', precio: 4200, estado: 'En proceso' },
+    // Agrega más objetos aquí
+  ];
+
 }
