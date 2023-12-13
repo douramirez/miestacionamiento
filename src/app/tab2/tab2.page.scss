@@ -1,5 +1,46 @@
 #map {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-  }
+  height: 100vh;
+}
+ion-button {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2000; /* Aumenta el z-index para que el botón se muestre encima de la lista */
+}
+
+ul {
+  position: absolute;
+  bottom: 0;
+  max-height: 30vh; /* Limita la altura máxima de la lista */
+  width: 100%;
+  background: white;
+  overflow-y: auto; /* Permite el desplazamiento vertical dentro de la lista */
+  z-index: 1001;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  position: relative; /* Añade esta línea */
+  display: flex; /* Alinea la imagen y el texto horizontalmente */
+  align-items: center; /* Centra verticalmente la imagen y el texto */
+  padding: 10px; /* Añade un poco de espacio alrededor de cada elemento de la lista */
+  border-bottom: 1px solid #ddd; /* Añade una línea entre cada elemento de la lista */
+}
+
+img {
+  width: 50px; /* Ajusta el ancho de la imagen */
+  height: 50px; /* Ajusta la altura de la imagen */
+  margin-right: 10px; /* Añade un poco de espacio a la derecha de la imagen */
+}
+
+.button-container {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2000;
+  display: flex; /* Añade esta línea para usar flexbox */
+  flex-direction: column; /* Añade esta línea para colocar los botones uno encima del otro */
+}

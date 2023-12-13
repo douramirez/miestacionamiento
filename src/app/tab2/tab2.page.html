@@ -1,11 +1,16 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Estacionamientos disponibles
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
   <div #map id="map"></div>
+  <ion-button (click)="toggleList()">
+    <ion-icon name="arrow-up"></ion-icon>
+  </ion-button>
+  <ul *ngIf="showList">
+    <li *ngFor="let estacionamiento of estacionamientos">
+      <img [src]="estacionamiento.imageUrl" alt="Imagen de estacionamiento"> 
+      {{ estacionamiento.info }}
+      <ion-icon name="arrow-down" (click)="estacionamiento.showButtons = !estacionamiento.showButtons"></ion-icon>
+      <div *ngIf="estacionamiento.showButtons" class="button-container">
+        <ion-button (click)="arrendarEstacionamiento(estacionamiento)">Arrendar Estacionamiento</ion-button>
+      </div>
+    </li>
+  </ul>
 </ion-content>

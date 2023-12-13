@@ -22,6 +22,10 @@ const routes: Routes = [
     path: 'password',
     loadChildren: () => import('./password/password.module').then( m => m.PasswordPageModule)
   },
+  {
+    path: 'confirmar-arriendo-modal',
+    loadChildren: () => import('./confirmar-arriendo-modal/confirmar-arriendo-modal.module').then( m => m.ConfirmarArriendoModalPageModule)
+  },
 ];
 @NgModule({
   imports: [
