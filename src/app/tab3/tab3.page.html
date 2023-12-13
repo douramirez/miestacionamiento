@@ -10,8 +10,7 @@
   <ion-list>
     <ion-item *ngFor="let item of historial">
       <ion-label>
-        <h2>{{ item.nombre }}</h2>
-        <p>Direccion: {{ item.direccion }}</p>
+        <h2>{{ item.direccion }}</h2>
         <p>Precio: {{ item.precio.toLocaleString('es-CL', { style: 'currency', currency: 'CLP' }) }}</p>
         <p>Estado: {{ item.estado }}</p>
       </ion-label>

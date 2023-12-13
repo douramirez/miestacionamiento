@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../service/data.service';
 
 @Component({
   selector: 'app-tab3',
@@ -7,12 +8,12 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
-  constructor() {}
+  constructor(private dataService: DataService) {}
 
-  historial = [
-    { nombre: 'Juanito Lopez',direccion: 'Maipu', precio: 3700, estado: 'Realizado' },
-    { nombre: 'Constanza Perez',direccion: 'Cerrilos', precio: 4200, estado: 'En proceso' },
-    // Agrega más objetos aquí
-  ];
+  historial: { direccion: string, precio: number, estado: string }[] = [];
+
+  ngOnInit() {
+    this.historial = this.dataService.getData();
+  }
 
 }

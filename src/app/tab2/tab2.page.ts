@@ -14,10 +14,10 @@ export class Tab2Page implements AfterViewInit {
   showList = false;
 
   estacionamientos = [
-    { lat: -33.5125494, lng: -70.7193755, info: "Estacionamiento 1",imageUrl: "https://blog.elroble.com/hubfs/2021/BLOG/3.%20%C2%BFCarro%20estacionado%20por%20mucho%20tiempo%3F%20-%20No%20pases%20por%20alto%20estos%20cuidados.jpg#keepProtocol", showButtons: false},
-    { lat: -33.5132113, lng: -33.5132113, info: "Estacionamiento 2" , imageUrl: "https://blog.elroble.com/hubfs/2021/BLOG/3.%20%C2%BFCarro%20estacionado%20por%20mucho%20tiempo%3F%20-%20No%20pases%20por%20alto%20estos%20cuidados.jpg#keepProtocol", showButtons: false},
-    { lat: -33.5132113, lng: -33.5132113, info: "Estacionamiento 3" , imageUrl: "https://blog.elroble.com/hubfs/2021/BLOG/3.%20%C2%BFCarro%20estacionado%20por%20mucho%20tiempo%3F%20-%20No%20pases%20por%20alto%20estos%20cuidados.jpg#keepProtocol", showButtons: false},
-    { lat: -33.5132113, lng: -33.5132113, info: "Estacionamiento 4" , imageUrl: "https://blog.elroble.com/hubfs/2021/BLOG/3.%20%C2%BFCarro%20estacionado%20por%20mucho%20tiempo%3F%20-%20No%20pases%20por%20alto%20estos%20cuidados.jpg#keepProtocol", showButtons: false},
+    { lat: -33.5125494, lng: -70.7193755, info: "Duoc Uc Plaza Oeste",imageUrl: "https://blog.elroble.com/hubfs/2021/BLOG/3.%20%C2%BFCarro%20estacionado%20por%20mucho%20tiempo%3F%20-%20No%20pases%20por%20alto%20estos%20cuidados.jpg#keepProtocol", showButtons: false},
+    { lat: -33.5132113, lng: -33.5132113, info: "Av. Maipu 563" , imageUrl: "https://blog.elroble.com/hubfs/2021/BLOG/3.%20%C2%BFCarro%20estacionado%20por%20mucho%20tiempo%3F%20-%20No%20pases%20por%20alto%20estos%20cuidados.jpg#keepProtocol", showButtons: false},
+    { lat: -33.5132113, lng: -33.5132113, info: "Av. lonquen 920" , imageUrl: "https://blog.elroble.com/hubfs/2021/BLOG/3.%20%C2%BFCarro%20estacionado%20por%20mucho%20tiempo%3F%20-%20No%20pases%20por%20alto%20estos%20cuidados.jpg#keepProtocol", showButtons: false},
+    { lat: -33.5132113, lng: -33.5132113, info: "Maipu 927" , imageUrl: "https://blog.elroble.com/hubfs/2021/BLOG/3.%20%C2%BFCarro%20estacionado%20por%20mucho%20tiempo%3F%20-%20No%20pases%20por%20alto%20estos%20cuidados.jpg#keepProtocol", showButtons: false},
     // Añade más estacionamientos aquí
   ];
 

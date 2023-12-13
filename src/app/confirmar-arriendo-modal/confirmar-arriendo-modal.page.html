@@ -1,13 +1,55 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="closeModal()">
+        <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
     <ion-title>Confirmar Arriendo</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <p>Detalle del arriendo: {{ estacionamiento.info }}</p>
-  <p>Medio de pago: [Aquí va el medio de pago]</p>
-  <p>Resumen: [Aquí va el resumen]</p>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        <ion-icon name="information-circle-outline"></ion-icon>
+        Detalle del arriendo
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{ estacionamiento.info }}
+    </ion-card-content>
+  </ion-card>
 
-  <ion-button (click)="confirmar()">Confirmar</ion-button>
+  <ion-card>
+  <ion-card-header>
+    <ion-card-title>
+      <ion-icon name="card-outline"></ion-icon>
+      Medio de pago
+    </ion-card-title>
+  </ion-card-header>
+  <ion-card-content style="white-space: nowrap; overflow-x: auto;">
+    Tarjeta de crédito **** **** **** 1234      $5000
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>
+      <ion-icon slot="start" name="list-outline"></ion-icon>
+      Resumen 
+    </ion-card-title>
+  </ion-card-header>
+  <ion-card-content style="white-space: nowrap; overflow-x: auto;">
+    Valor del arriendo: ${{ valorArriendo }} <br>
+    Tarifa: ${{ tarifa }} <br>
+    Total: ${{ total }}
+  </ion-card-content>
+</ion-card>
+
+<ion-button (click)="confirmar()">
+  <ion-icon slot="start" name="checkmark-circle-outline"></ion-icon>
+  Confirmar
+</ion-button>
 </ion-content>
